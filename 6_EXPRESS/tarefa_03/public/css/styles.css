@@ -1,0 +1,32 @@
+body {
+    background-color: slateblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+body h1 {
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.479);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: rgb(136, 123, 216);
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+a:hover {
+    background-color: rgb(77, 56, 209);
+}

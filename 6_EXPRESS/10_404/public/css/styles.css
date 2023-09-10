@@ -1,0 +1,10 @@
+body {
+    background-color: #dfdfdf;
+    text-align: center;
+    padding: 2em;
+}
+
+a:hover {
+    background-color: #bbbbbb;
+    box-shadow: 3px 4px 4px #000000ea
+}
