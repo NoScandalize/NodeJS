@@ -1,0 +1,34 @@
+<div class="main-container">
+    <div class="products">
+        <h2>Produtos em oferta</h2>
+        <div class="products-list">
+            {{#each offProducts}}
+                {{> product}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="products">
+        <h2>Produtos para sua casa</h2>
+        <div class="products-list">
+            {{#each homeProducts}}
+                {{> product}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="products">
+        <h2>Produtos para sua cozinha</h2>
+        <div class="products-list">
+            {{#each kitchenProducts}}
+                {{> product}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="products">
+        <h2>Produtos para seu quarto</h2>
+        <div class="products-list">
+            {{#each bedProducts}}
+                {{> product}}
+            {{/each}}
+        </div>
+    </div>
+</div>

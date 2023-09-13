@@ -1,0 +1,21 @@
+{{#with conjuntopote}}
+<div class="main-container">
+    <div class="products view-info-products">
+        <h2>{{name}}</h2>
+        <div class="view-item-container">
+            <img src={{imgDir}} alt={{nome}}>
+            <div class="view-item-info">
+                <p>Vendido e entregue por <a href="/" class="logo logo-info">Loja</a></p>
+                <p class="real-price real-price-info">R$ {{realPrice}}</p>
+                <p class="off-price off-price-info">R$ {{offPrice}} <span>no Pix</span></p>
+                <p>ou R$ {{cost}} em 10x de R$ {{parcel}} sem juros</p>
+                <div class="btn-container">
+                    <button class="btn-buy">COMPRAR AGORA</button>
+                    <button class="btn-buy">ADICIONAR À SACOLA</button>
+                    <button class="btn-freight">Calcular frete e prazo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/with}}
