@@ -1,0 +1,13 @@
+<a href="/">Voltar</a>
+<div class="info-container">
+    <div class="user-container">
+        <h1>{{user.name}}</h1>
+        <p>{{user.ocupation}}</p>
+        <h2>Endereço</h2>
+        {{#each user.Addresses}}
+            <p>{{this.street}}</p>
+            <p>{{this.number}}</p>
+            <p>{{this.city}}</p>
+        {{/each}}
+    </div>
+</div>
