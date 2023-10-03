@@ -1,0 +1,27 @@
+<h1>Gerenciamento de Produtos</h1>
+<div class="product-manage-container">
+    <div class="product-manage-info">
+        <div class="product-info">
+            <p>ID</p>
+            <p>Produto</p>
+            <p>Preço</p>
+            <p>Gerenciamento</p>
+        </div>
+    </div>
+    {{#each products}}
+    <div class="product-manage">
+        <div class="product-manage-data">
+            <p>{{this._id}}</p>
+            <p>{{this.name}}</p>
+            <p>R$ {{this.price}}</p>
+            <div class="btn-container">
+                <a href="/products/edit/{{this._id}}" class="btn">Editar</a>
+                <form action="/products/remove/{{this._id}}" method="POST">
+                    <input type="submit" value="Excluir" class="btn">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    {{/each}}
+</div>
