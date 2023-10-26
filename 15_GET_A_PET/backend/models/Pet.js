@@ -20,13 +20,14 @@ const Pet = mongoose.model(
             type: String,
             required: true,
         },
+        available: {
+            type: Boolean,
+        },
         images: {
             type: Array,
             required: true,
         },
-        avaliable: {
-            type: Boolean
-        },
+        
         user: Object,
         adpoter: Object,
       },

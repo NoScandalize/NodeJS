@@ -110,7 +110,7 @@ module.exports = class PetController {
         const token = getToken(req);
         const user = await getUserByToken(token);
 
-        const pets = await Pet.find({'adopter._id': user._id}).sort('-createdAt');
+        const pets = await Pet.find({'adpoter._id': user._id}).sort('-createdAt');
 
         res.status(200).json({
             pets,
@@ -177,7 +177,7 @@ module.exports = class PetController {
 
         await Pet.findByIdAndRemove(id);
 
-        res.status(200).json({ message: 'Pet REMOVIDO com sucesso!' })
+        res.status(200).json({ message: 'Pet removido com sucesso!' })
 
     }
 
@@ -247,9 +247,7 @@ module.exports = class PetController {
             updatedData.color = color;
         }
 
-        if(images.length === 0) {
-            res.status(422).json({ message: "A imagem é obrigatória!" })
-        }  else {
+        if(images.length > 0) {
             updatedData.images = [];
             images.map((image) => {
                 updatedData.images.push(image.filename);
@@ -347,7 +345,7 @@ module.exports = class PetController {
 
         }
 
-        pet.avaliable = false;
+        pet.available = false;
 
         await Pet.findByIdAndUpdate(id, pet);
 
