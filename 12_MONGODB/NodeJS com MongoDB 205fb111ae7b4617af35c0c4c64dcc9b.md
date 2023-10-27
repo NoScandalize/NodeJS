@@ -2,7 +2,7 @@
 
 ### Informações iniciais
 
-[**O que é NoSQL?**](NodeJS%20com%20MongoDB%20205fb111ae7b4617af35c0c4c64dcc9b/O%20que%20e%CC%81%20NoSQL%207b7919d7d5e04c1a9ff40d1bef69e6f9.md)
+[**O que é NoSQL?**](https://github.com/NoScandalize/NodeJS/blob/main/12_MONGODB/NodeJS%20com%20MongoDB%20205fb111ae7b4617af35c0c4c64dcc9b/O%20que%20%C3%A9%20NoSQL%207b7919d7d5e04c1a9ff40d1bef69e6f9.md)
 
 [O que é CRUD?](NodeJS%20com%20MongoDB%20205fb111ae7b4617af35c0c4c64dcc9b/O%20que%20e%CC%81%20CRUD%2043884856ce314029a510bdfe05b4f9f0.md)
 
